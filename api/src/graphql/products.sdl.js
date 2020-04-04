@@ -5,6 +5,11 @@ export const schema = gql`
     description: String!
     price_cents: Int!
     createdAt: DateTime!
+    customType: CustomType!
+  }
+
+  type CustomType {
+    test: String
   }
 
   type Query {
